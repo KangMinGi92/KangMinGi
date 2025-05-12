@@ -10,15 +10,15 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		String str =br.readLine();
 		String[] arr = str.split(" ");
-		int a = Integer.parseInt(arr[0]);
-		int b = Integer.parseInt(arr[1]);
-		int c = test(a,b);
+		long a = Long.parseLong(arr[0]);
+		long b = Long.parseLong(arr[1]);
+		long c = test(a,b);
 		bw.write(c+"");
 		bw.flush();
 		bw.close();
 	}// main
 	
-	public static int test(int a, int b) {
+	public static long test(long a, long b) {
 		return (a+b)*(a-b);
 	}
 }// class
