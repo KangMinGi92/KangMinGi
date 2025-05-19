@@ -13,8 +13,8 @@ public class Main {
             int w = sc.nextInt();
             int n = sc.nextInt();
             if (n % h != 0) {
-                a = n % h * 100;
-                b = n / h + 1;
+                a = n % h * 100; //층수
+                b = n / h + 1; //호수
             } else {
                 a = h * 100;
                 b = n / h;
